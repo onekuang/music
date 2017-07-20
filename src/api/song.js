@@ -1,4 +1,4 @@
-import {commonParams} from './config'
+import {commonParams} from './config.js'
 import axios from 'axios'
 
 export function getLyric(mid) {

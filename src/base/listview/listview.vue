@@ -107,6 +107,9 @@ export default {
       let anchorIndex = parseInt(this.touch.anchorIndex) + delta
       this._scrollTo(anchorIndex)
     },
+    refresh() {
+      this.$refs.listview.refresh()
+    },
     // bscroll事件, 滑动时触发. pos参数有2个值一个是x和y的偏移位置
     scroll(pos) {
       this.scrollY = pos.y
